@@ -3,6 +3,9 @@
 本项目用于翻译Elasticsearch的文档，当前基于Elasticsearch的学习文档，首先我们将会翻译ElasticSearch的文档，我们基于当前最新版本做翻译，即ElasticSearch 7.3，对应的文档地址为
 - [ElastiacSearch 7.3 document](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html)
 
+对应的中文翻译文档地址为:
+- [ElasticSearch 中文文档](ES_Document/read.md)
+
 ## 1. ElasticSearch产品相关文档
 
 - [python客户端](https://github.com/elastic/elasticsearch-py)
