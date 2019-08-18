@@ -38,3 +38,10 @@
 - [awesome](https://github.com/dzharii/awesome-elasticsearch)
 - [中国力量](https://github.com/elasticsearch-cn/elasticsearch-definitive-guide)
 - [调试查询](https://github.com/polyfractal/elasticsearch-inquisitor)
+
+## 6. 默认约定
+
+```txt
+1. ElasticSearch 简称 ES
+2. Elastic Stack 简称 EStack
+```
