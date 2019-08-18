@@ -44,4 +44,5 @@
 ```txt
 1. ElasticSearch 简称 ES
 2. Elastic Stack 简称 EStack
+3. JavaScript 简称 JS
 ```
