@@ -36,7 +36,7 @@
 
 ## [18 冻结indexs](18冻结indexs/readme.md)
 
-## [19 管理ElasticSearch(Administering Elasticsearch)](19 管理ElasticSearch(Administering_Elasticsearch)/readme.md)
+## [19 管理ElasticSearch(Administering Elasticsearch)](19管理ElasticSearch(Administering_Elasticsearch)/readme.md)
 
 ## [20 命令操作工具](20命令操作工具/readme.md)
 
