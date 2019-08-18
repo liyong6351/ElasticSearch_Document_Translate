@@ -4,7 +4,7 @@
 - [ElastiacSearch 7.3 document](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html)
 
 对应的中文翻译文档地址为:
-- [ElasticSearch 中文文档](ES_Document/read.md)
+- [ElasticSearch 中文文档](ES_Document/readme.md)
 
 ## 1. ElasticSearch产品相关文档
 
