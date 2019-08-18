@@ -1,8 +1,7 @@
 - [回到首页](../readme.md)
+- [原始文档](https://www.elastic.co/guide/en/elasticsearch/reference/current/elasticsearch-intro.html)
 
 # 概览
-
-- [原始文档](https://www.elastic.co/guide/en/elasticsearch/reference/current/elasticsearch-intro.html)
 
 > 本文档讲解ElasticSearch简介模块的内容
 
