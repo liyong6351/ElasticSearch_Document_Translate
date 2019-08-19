@@ -341,6 +341,50 @@ Linux: vm.max_map_count设置应该在/etc/sysctl.conf中永久设置
 
 ## 2 配置ES
 
+```txt
+ES具有良好的默认值，只需要很少的配置。可以使用Cluster Update Settings API在正在运行的群集上更改大多数设置。
+配置文件应包含通用设置（例如node.name和paths），或节点为了能够加入集群而需要的设置，例如cluster.name和network.host。
+```
+
+* 配置文件地址
+
+```txt
+ES有三个配置文件：
+1. elasticsearch.yml配置ES
+2. jvm.options 配置ES的JVM设置
+3. log4j2.properties 配置Elasticsearch的日志
+
+这些文件位于config目录中，其默认位置取决于安装是来自存档分发（tar.gz还是zip）还是包分发（Debian或RPM软件包）
+对于归档分发，config目录位置默认为$ES_HOME/config。可以通过ES_PATH_CONF环境变量更改config目录的位置，如下所示:
+ES_PATH_CONF=/path/to/my/config ./bin/elasticsearch
+另外，您可以通过命令行或通过shell配置文件导出ES_PATH_CONF环境变量。
+
+对于包发行版，config目录位置默认为/ etc/elasticsearch
+config目录的位置也可以通过ES_PATH_CONF环境变量进行更改，但请注意，在shell中设置它是不够的
+相反，此变量来自/etc/default/elasticsearch（对于Debian软件包）和/etc/sysconfig/elasticsearch（对于RPM软件包）
+您需要相应地编辑其中一个文件中的ES_PATH_CONF=/etc/elasticsearch条目以更改config目录位置
+```
+
+* 配置文件的格式
+
+```
+配置格式为YAML
+path:
+    data: /var/lib/elasticsearch
+    logs: /var/log/elasticsearch
+也支持properties文件形式
+path.data: /var/lib/elasticsearch
+path.logs: /var/log/elasticsearch
+```
+
+* 替换环境变量
+
+```txt
+在配置文件中用$ {...}表示法引用的环境变量将替换为环境变量的值，例如：
+node.name:    ${HOSTNAME}
+network.host: ${ES_NETWORK_HOST}
+```
+
 ## 3 重要的ES配置
 
 ## 4 重要的系统配置
