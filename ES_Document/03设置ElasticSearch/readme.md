@@ -303,6 +303,38 @@ RPM还有一个系统配置文件（/etc/sysconfig/elasticsearch），它允许�
 
 ### 1.6 Docker的安装
 
+```txt
+ES也支持使用docker镜像进行安装。镜像使用centos:7作为基础镜像。
+有关所有已发布的Docker镜像和标记的列表，请访问www.docker.elastic.co,源文件在Github中。
+这些镜像可以在Elastic许可下免费使用。
+```
+
+* 拉取镜像
+
+```txt
+获取Docker的ES就像对Elastic Docker注册表发出docker pull命令一样简单。
+docker pull docker.elastic.co/elasticsearch/elasticsearch:7.3.0
+其他的docker镜像列表在 https://www.docker.elastic.co/ 目录下
+```
+
+* 使用命令行运行ES
+
+1. 开发模式
+```
+使用以下命令可以快速启动Elasticsearch以进行开发或测试：
+docker run -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:7.3.0
+请注意使用单节点发现，该发现允许绕过单节点开发集群中的引导程序检查。
+```
+
+2. 生产模式
+
+```
+vm.max_map_count内核设置需要设置为至少262144才能用于生产。根据您的平台：
+Linux: vm.max_map_count设置应该在/etc/sysctl.conf中永久设置
+```
+
+……
+
 ### 1.6 HomeBrew的安装
 
 略
